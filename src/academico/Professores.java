@@ -28,12 +28,21 @@ public class Professores {
         this.lotacao = lotacao;
     }
 
-    public void imprimirDados(){
-        System.out.println("Nome: " + this.nome);
-        System.out.println("Matrícula: " + this.matricula);
-        System.out.println("CPF: " + this.CPF);
-        System.out.println("Admissão: " + this.admissao);
-        System.out.println("E-mail: " + this.email);
-        System.out.println("Lotação: " + this.lotacao.getNome());
+        public void imprimirDados() {
+            System.out.println("Nome: " + nome);
+            System.out.println("Matrícula: " + matricula);
+            System.out.println("CPF: " + CPF);
+            System.out.println("Admissão: " + admissao);
+            System.out.println("Email: " + email);
+           
+            if (lotacao != null) {
+                System.out.println("Lotação: " + lotacao.getNome()); // Método getNome para retornar o nome do curso
+            } else {
+                System.out.println("Lotação: Não definida");
+            }
+        } 
     }
-}
+
+        
+    
+

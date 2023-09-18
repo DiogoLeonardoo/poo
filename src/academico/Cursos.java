@@ -8,7 +8,7 @@ public class Cursos {
     public String nome;
 
     public String getNome() {
-        return null;
+        return nome;
     }
 
     public char[] getCurso() {
